@@ -4,6 +4,7 @@ from .role_manager import RoleManager
 from .prompt_generator import PromptGenerator
 from .response_parser import ResponseParser
 from .logging_module import LoggingModule
+from .visualization import Visualization
 from .game_rules import GameRules
 import streamlit as st
 import pandas as pd
@@ -17,6 +18,7 @@ class MainController:
         self.role_manager = role_manager if role_manager else RoleManager()
         self.prompt_generator = PromptGenerator(language=self.config_manager.get_config('default_language'))
         self.response_parser = ResponseParser()
+        self.visualization = Visualization()
         self.logging = LoggingModule(log_directory=self.config_manager.get_config('log_directory'))
 
     def run_game(self, game_name, role_names):
