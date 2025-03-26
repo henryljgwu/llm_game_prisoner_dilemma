@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Cooperative role",
+        "behavior": "Tend to cooperate, but will remember if the other agent defects",
+        "llm_config": {
+            "provider": "gpt",
+            "model": "gpt-4o"
+        }
+    },
+    {
+        "name": "Negative role",
+        "behavior": "Always defect, but if the other agent consistently cooperates, will cooperate",
+        "llm_config": {
+            "provider": "gpt",
+            "model": "gpt-4o"
+        }
+    },
+    {
+        "name": "Psychopath role",
+        "behavior": "Behave randomly, and think like a psychopath. Maybe even cooperate with the people who defect!",
+        "llm_config": {
+            "provider": "gpt",
+            "model": "gpt-4o"
+        }
+    }
+]

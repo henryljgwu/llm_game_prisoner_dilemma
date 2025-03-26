@@ -1,0 +1,12 @@
+{
+    "name": "Prisoner's Dilemma",
+    "actions": ["Cooperate", "Defect"],
+    "payoff": {
+        "Cooperate,Cooperate": [3, 3],
+        "Cooperate,Defect": [0, 5],
+        "Defect,Cooperate": [5, 0],
+        "Defect,Defect": [1, 1]
+    },
+    "max_rounds": 3,
+    "rules": "Two players play a repeated Prisoner's Dilemma game for 3 rounds. In each round, both players independently choose to either cooperate or defect. The payoffs for each round are as follows: if both players cooperate, each receives 3 points; if one player defects while the other cooperates, the defector receives 5 points and the cooperator receives 0 points; if both players defect, each receives 1 point. The total score for each player is the sum of the points from all 3 rounds."
+}

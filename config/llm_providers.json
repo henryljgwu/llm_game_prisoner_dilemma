@@ -1,0 +1,25 @@
+{
+    "openrouter": {
+        "base_url": "https://openrouter.ai/api/v1",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "available_models": ["deepseek/deepseek-r1"]
+    },
+
+    "gpt": {
+        "base_url": "https://api.openai.com/v1",
+        "api_key_env": "GPT_API_KEY",
+        "available_models": ["gpt-4o","o1-mini"]
+    },
+
+    "deepseek": {
+        "base_url": "https://api.deepseek.com",
+        "api_key_env": "DS_API",
+        "available_models": ["deepseek-reasoner"]
+    },
+
+    "custom_provider": {
+        "base_url": "https://custom-endpoint.com/api/v1",
+        "api_key_env": "CUSTOM_API_KEY",
+        "available_models": ["gpt-4", "llama-2"]
+    }
+}
